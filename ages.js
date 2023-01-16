@@ -1,4 +1,4 @@
-// @author shankar
+// @author shankar.
 const ages = { alice: 18, bob: 27 };
 const nullAges = Object.create(null);
 
