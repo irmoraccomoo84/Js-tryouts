@@ -1,0 +1,23 @@
+function sync(ms) {
+ var start = new Date();
+ while ((new Date() - start) < ms);
+ console.log('finished');
+ }
+
+ 
+ function asyncPromise(ms) {
+	return new Promise((resolve) =>{
+		resolve();
+	});
+ }
+ 
+ 
+ function async(ms) {
+	asyncPromise(6000).then(()=> console.log('finished'));
+}
+
+
+console.log('started');
+sync(6000);
+console.log('hello');
+ 
